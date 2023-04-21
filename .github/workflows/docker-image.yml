@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t magadiflo/docker-graphql:0.0.2 .
+        docker build -t magadiflo/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push magadiflo/docker-graphql:0.0.2
+        docker push magadiflo/docker-graphql:latest
         
       
     
